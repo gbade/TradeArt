@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  tradeart:
+    image: ${DOCKER_REGISTRY-}tradeart
+    build:
+      context: .
+      dockerfile: TradeArt/Dockerfile

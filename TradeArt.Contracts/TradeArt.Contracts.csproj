@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="GraphQL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GraphQL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TradeArt.Entities\TradeArt.Entities.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="GraphQL.Client.Abstractions" Version="5.1.0" />
+  </ItemGroup>
+</Project>

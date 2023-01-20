@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TradeArt.Contracts\TradeArt.Contracts.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="GraphQL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GraphQL\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="GraphQL.Client" Version="5.1.0" />
+    <PackageReference Include="GraphQL.Client.Serializer.Newtonsoft" Version="5.1.0" />
+    <PackageReference Include="GraphQL.Client.Abstractions" Version="5.1.0" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Prices\" />
+    <None Remove="Prices\Response\" />
+    <None Remove="Text\" />
+    <None Remove="DataProcessor\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Prices\" />
+    <Folder Include="Prices\Response\" />
+    <Folder Include="Text\" />
+    <Folder Include="DataProcessor\" />
+  </ItemGroup>
+</Project>
