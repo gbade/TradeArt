@@ -9,18 +9,18 @@ namespace TradeArt.Business
 	public class AsyncWorker : IAsyncWorker
     {
         private HashSet<Task<bool>> tasks;
-        private readonly IProcessdata _funcB;
+        private readonly IProcessdata _dataProcessor;
 
-		public AsyncWorker(IProcessdata funcB)
+		public AsyncWorker(IProcessdata dataProcessor)
 		{
             tasks = new HashSet<Task<bool>>();
-            _funcB = funcB;
+            _dataProcessor = dataProcessor;
 		}
 
         public async Task<bool> FuncA()
         {
             for (int i = 1; i < 1000; i++)
-                tasks.Add(_funcB.ProcessAsync(i));
+                tasks.Add(_dataProcessor .ProcessAsync(i));
 
             var results = await Task.WhenAll(tasks);
 
