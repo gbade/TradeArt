@@ -36,6 +36,7 @@ namespace TradeArt
             services.AddSingleton<IConfigManager>(Configuration.GetSection("ConfigManager").Get<ConfigManager>());
             services.AddTransient<IGraphQLClientFactory>(sp => new GraphQLClientFactory(Configuration["ConfigManager:ApiUrl"]));
             services.AddTransient<IAsyncWorker, AsyncWorker>();
+            services.AddTransient<IProcessdata, ProcessData>();
             services.AddTransient<IHashCalculator, HashCalculator>();
             services.AddTransient<IGraphQLService, GraphQLService>();
             services.AddTransient<ITextInverter, TextInverter>();

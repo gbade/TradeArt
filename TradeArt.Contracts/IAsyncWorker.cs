@@ -6,7 +6,11 @@ namespace TradeArt.Contracts
 	public interface IAsyncWorker
 	{
 		Task<bool> FuncA();
-        Task<bool> ProcessData(int data);
     }
+
+	public interface IProcessdata
+	{
+		Task<bool> ProcessAsync(int data);
+	}
 }
 

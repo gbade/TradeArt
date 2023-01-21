@@ -14,8 +14,6 @@ using TradeArt.Entities;
 using TradeArt.Entities.DataProcessor;
 using TradeArt.Entities.Text;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace TradeArt.API.Controllers
 {
     [ApiController]

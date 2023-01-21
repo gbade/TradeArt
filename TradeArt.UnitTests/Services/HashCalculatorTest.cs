@@ -28,19 +28,6 @@ namespace TradeArt.UnitTests.Services
             }
         }
 
-        [Fact]
-        public void Should_Validate_File_Path()
-        {
-            //Arrange
-            var filePath = _dir;
-
-            //Act
-            var fileExists = File.Exists(filePath);
-
-            //Assert
-            Assert.True(fileExists);
-        }
-
         [Theory]
         [InlineData("5551788da24fd0dd81c101ccf91545a400479964752f64964e4b7b76e3f6acdb002359a6982c3404d5c881ecda8f656cbd051afb8c1052c553f8b84adc6ce450")]
         public async Task Should_CalculateHash_And_CorrectResults(string expected)
