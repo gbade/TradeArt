@@ -20,7 +20,7 @@ namespace TradeArt.Business
         public async Task<bool> FuncA()
         {
             for (int i = 1; i < 1000; i++)
-                tasks.Add(_dataProcessor .ProcessAsync(i));
+                tasks.Add(_dataProcessor.ProcessAsync(i));
 
             var results = await Task.WhenAll(tasks);
 
